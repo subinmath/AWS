@@ -1,0 +1,10 @@
+#cloud-config
+cloud_final_modules:
+- [users-groups,always]
+users:
+  - name: subin
+    groups: [ root ]
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    ssh-authorized-keys: 
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4lVR5U2/28nUkh67OvmHh+V6vdVkg/Jm+ww3/JSFPB47P3RlsIIOxuEHyyIUdLd8zgFZxRFm4c8c5Y7NEQpaS2QEokPrstUFCXF3WwaspIZa/1nneBqlTQAY5f/YHo1l+/fkrnZhgc6sINJI6DpwxxJJKGyYRMRLNbtVNTcWBXxQ+vk5JD/K57esgGH25L1nnvBrDFE844j9VLv8nqJaP6b0uS2SagnvMSz+9o2Eku7jatI4/ee2FFn7t7u8ZDkvCE+H+NpUVEySOevzqK+EALq9kwZ8c5rS/bMQpzmGXem0NaP5le9VaEb+PCt7uFTed9m7fRPd1OzYlPUmGLcad Subin@DynamicNexts-MacBook-Pro.local
